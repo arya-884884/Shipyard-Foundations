@@ -3,8 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Trigger the workflow on push to the main branch
-      - master # Fallback in case your default branch is named master
+      - aryanandan@mulearn  # We changed this to match your exact branch name
 
 permissions:
   contents: read
@@ -24,9 +23,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Point this to where your index.html is located
           path: './aryanandan@mulearn/Task-3/' 
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
