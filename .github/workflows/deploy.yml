@@ -24,7 +24,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # This points to the exact folder path where your index.html lives
-          path: './aryanandan@mulearn/Task-3/' 
+          path: 'aryanandan@mulearn/Task-3/' 
 
       - name: Deploy to GitHub Pages
         id: deployment
